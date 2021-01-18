@@ -1,0 +1,156 @@
+
+.c-header.c-header-template-1 .widget-view-desktop .widget-logotype { width:auto; }
+.c-header.c-header-template-1 .widget-view-desktop .widget-logotype img { display:inline-block; vertical-align:middle; width:auto; max-height:30px; }
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-logotype { max-width:160px; }
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-item.widget-logotype { padding:15px 0; }
+
+
+.ns-bitrix.c-menu.c-menu-horizontal-1 .menu-wrapper.intec-cl-background {
+	background: rgb(255,209,25) !important; 
+	background: -moz-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: -webkit-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd119",endColorstr="#dea701",GradientType=1) !important;
+}
+
+.ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item:hover, .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item.menu-item-active { background:#ffd633 !important;}
+
+
+
+
+/* btn in slider*/
+.c-slider.c-slider-template-1 .widget-item-buttons .widget-item-button.intec-cl-background {
+	background: rgb(255,209,25) !important; 
+	background: -moz-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: -webkit-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd119",endColorstr="#dea701",GradientType=1);
+	-webkit-transition-duration: unset;
+    -moz-transition-duration: unset;
+    -ms-transition-duration: unset;
+    -o-transition-duration: unset;
+    transition-duration: unset;
+}
+.c-slider.c-slider-template-1 .widget-item-buttons .widget-item-button.intec-cl-background:hover { background: #ffd633  !important; background-color: #ffd633  !important; }
+
+
+/* form consulting */
+.widget-web-form-2.intec-cl-background {
+	background: rgb(255,209,25) !important; 
+	background: -moz-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: -webkit-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd119",endColorstr="#dea701",GradientType=1) !important;
+}
+.widget-web-form-2-background.intec-cl-background {
+	background: rgb(255,209,25) !important; 
+	background: -moz-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: -webkit-linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	background: linear-gradient(180deg, rgba(255,209,25,1) 0%, rgba(255,204,0,1) 50%, rgba(222,167,1,1) 100%) !important; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd119",endColorstr="#dea701",GradientType=1) !important;
+}
+
+
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu [data-uppercase=true] .menu-item .menu-item-text-wrapper { letter-spacing: unset !important;}
+.ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item .menu-item-text .menu-item-text-wrapper { color:#000 !important; }
+.ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item-text .menu-item-text-icon { color:#000 !important; }
+
+
+.c-slider.c-slider-template-1 .widget-item-buttons .widget-item-button { color:#222222 !important; }
+
+
+.intec-ui.intec-ui-control-button.intec-ui-scheme-current { color:#222222 !important; }
+
+
+
+/* text buttons product */
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-buy-button { color:#222222 !important; }
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-sections-tab[data-active=true] { color:#222222 !important; }
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-panel-buy-button { color:#222222 !important; }
+.intec-cl-border-hover:hover { color:#222222 !important; }
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-panel-button-action:hover svg path { stroke: #222222 !important; }
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-button-action-add:hover .catalog-element-button-action-text { color:#222222 !important; }
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-button-action-add:hover .catalog-element-button-action-icon svg path { stroke: #222222 !important; }
+.ns-bitrix.c-catalog-section.c-catalog-section-catalog-tile-4 .catalog-section-item-purchase-button { color:#222222 !important;}
+
+
+/* cart */
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-2 .sale-basket-small-footer-order-button { color:#222222 !important; }
+
+
+
+/* 4 block on index */
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-name-wrapper-2 { color:#222222 !important; }
+
+
+
+a, [data-ui-markup="a"], .intec-ui-markup-a {
+	color: #663399;
+}
+a:hover, [data-ui-markup="a"]:hover, .intec-ui-markup-a:hover, a:focus, [data-ui-markup="a"]:focus, .intec-ui-markup-a:focus {
+  color: #8040bf;
+}
+
+.intec-cl-text {
+  color: #663399 !important;
+}
+.intec-cl-text-active:active {
+  color: #663399 !important;
+}
+.intec-cl-text-active.active {
+  color: #663399 !important;
+}
+.intec-cl-text-focus:focus {
+  color: #663399 !important;
+}
+.intec-cl-text-hover:hover {
+  color: #663399 !important;
+}
+
+.intec-cl-text-light {
+  color: #8040bf !important;
+}
+.intec-cl-text-light-active:active {
+  color: #8040bf !important;
+}
+.intec-cl-text-light-focus:focus {
+  color: #8040bf !important;
+}
+.intec-cl-text-light-hover:hover {
+  color: #8040bf !important;
+}
+
+
+.ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item.menu-item-default .menu-submenu .menu-submenu-item:hover > .menu-submenu-item-text, .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-submenu .menu-submenu-item:hover > .menu-submenu-item-text, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-1 .widget-container-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item:hover .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-1 .widget-container-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item.menu-item-active .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-7 .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item:hover .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-7 .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item.menu-item-active .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-9 .widget-container-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item:hover .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-9 .widget-container-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-item.menu-item-active .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-fixed .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-wrapper .menu-item:hover .menu-item-text-wrapper, .c-header.c-header-template-1 .widget-view.widget-view-fixed .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-1 .menu-wrapper .menu-item.menu-item-active .menu-item-text-wrapper { color: #663399 !important; }
+
+
+.widget.c-advantages.c-advantages-template-31 .widget-item-number.intec-cl-text { color: #ffcc00 !important;}
+
+
+.intec-button.intec-button-cl-common { color:#222; }
+
+
+/* question tooltip */
+.ns-bitrix.c-catalog-section.c-catalog-section-catalog-tile-4 .catalog-section-item-quantity-icon-2 {
+	font-size: 13px; line-height: 16px; color:#808080; 
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-quantity-indicator-2 { 
+	font-size: 13px; line-height: 16px; color:#808080; display: inline-block; vertical-align: middle;
+}
+
+
+/* Cart */
+
+.ns-bitrix.c-basket.c-basket-template-1 .basket-price-economy-value, .ns-bitrix.c-basket.c-basket-template-1 .basket-item-total-economy-value, .ns-bitrix.c-basket.c-basket-template-1 .basket-item-image-sticker-value { background-color: #cc3399; color:#fff;}
+
+.ns-bitrix.c-sale-order-ajax.c-sale-order-ajax-simple-1 .bx-soa-cart-total .bx-soa-cart-total-line.bx-soa-cart-total-line-highlighted { background-color: #cc3399; color:#fff;}
+.bx-soa-section-title-container a { color: #8040bf !important; }
+.bx-soa-section-title-container a:hover, .bx-soa-section-title-container a:focus {  color: #8040bf !important;}
+
+@media (max-width: 900px) {
+	#bx-soa-paysystem-and-delivery.intec-grid-nowrap { -ms-flex-wrap: wrap !important; flex-wrap: wrap !important; }
+}
+
+
+
+
