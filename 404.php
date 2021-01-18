@@ -12,7 +12,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         <div class="row">
             <div class="col-md-6 xs-12">
                 <div class="image-404">
-                    <img src="<?= SITE_DIR ?>images/404.png">
+                    <img src="<?= SITE_DIR ?>images/404.jpg?v=2">
                 </div>
             </div>
             <div class="col-md-6 xs-12">

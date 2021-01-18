@@ -8,7 +8,7 @@ class KeySaleRestriction extends Bitrix\Sale\Delivery\Restrictions\Base
 
     public static function getClassTitle()
     {
-        return 'Продажа контента';
+        return 'Продажа контента (Скрываем для эл. товаров)';
     }
 
     public static function getClassDescription()
