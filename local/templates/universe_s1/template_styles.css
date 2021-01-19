@@ -1,3 +1,9 @@
 #bx-soa-paysystem-and-delivery > div:first-child {
     order: 2;
 }
+
+.custom-basket-top .basket-total,
+.custom-basket-top .basket-items-panel,
+#bx-soa-basket {
+    display: none !important;
+}

@@ -59,7 +59,7 @@ if (empty($template))
         </div>
         <script>
             $(function (){
-                $(".catalog-section-item-purchase-button").click(function () {
+                $(".catalog-section-item-purchase-button-order").click(function () {
                     let name = $(this).closest('.catalog-section-items').find('.catalog-section-item-name').text();
                     $(".form-order-section, .overflow").fadeIn();
                     $(".form-order-section input[name='form_text_7']").val(name);
