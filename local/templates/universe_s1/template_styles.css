@@ -7,3 +7,31 @@
 #bx-soa-basket {
     display: none !important;
 }
+
+.catalog-element-buy-container .intec-ui-part-content,
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-buy-added[data-basket-state=added] {
+    color: #fff !important;
+}
+
+.catalog-element-buy-button.intec-cl-background,
+.catalog-element-buy-button.intec-cl-background:hover {
+    background-color: #8b00ff !important;
+}
+
+.intec-content-right-wrapper .intec-button.intec-button-cl-common:hover,
+.intec-content-right-wrapper .intec-button.intec-button-cl-common.hover {
+    color: #fff !important;
+    background-color: #8b00ff !important;
+}
+
+.intec-content-right-wrapper .intec-button.intec-button-cl-common {
+    border-color: #8b00ff !important;
+}
+
+.intec-ui-part-content {
+    color: #8b00ff;
+}
+
+.intec-ui-control-basket-button:hover .intec-ui-part-content {
+    color: #fff;
+}

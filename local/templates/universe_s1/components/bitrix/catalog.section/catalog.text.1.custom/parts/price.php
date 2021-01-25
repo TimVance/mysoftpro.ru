@@ -46,13 +46,13 @@ use intec\core\helpers\Html;
                 </div>
             <?php } ?>
             <div class="intec-grid-item-auto">
-                <div class="catalog-section-item-price-discount" data-role="item.price.discount">
-                    <? if ($arPrice["PRICE"] == 0): ?>
-                        <? echo 'По запросу'; ?>
-                    <? else: ?>
-                        <?= !empty($arPrice) ? $arPrice['PRINT_PRICE'] : null ?>
-                    <? endif; ?>
-                </div>
+				<? if ($arPrice["PRICE"] == 0): ?>
+					<? echo 'По запросу'; ?>
+				<? else: ?>
+					<div class="catalog-section-item-price-discount" data-role="item.price.discount">
+						<?= !empty($arPrice) ? $arPrice['PRINT_PRICE'] : null ?>
+					</div>
+				<? endif; ?>
                 <div class="catalog-section-item-price-base" data-role="item.price.base">
                     <?= !empty($arPrice) ? $arPrice['PRINT_BASE_PRICE'] : null ?>
                 </div>

@@ -25,18 +25,17 @@ use intec\core\helpers\Html;
     ]) ?>
         <div class="catalog-section-item-price-wrapper intec-grid intec-grid-nowrap intec-grid-a-v-center">
             <div class="intec-grid-item">
-                <div class="catalog-section-item-price-discount" >
-                    <?php if (!$arVisual['OFFERS']['USE'] && !empty($arItem['OFFERS'])) { ?>
-                        <?= Loc::getMessage('C_CATALOG_SECTION_CATALOG_LIST_1_PRICE_FORM') ?>
-                    <?php } ?>
-                    <span data-role="item.price.discount">
                     <? if ($arPrice["PRICE"] == 0): ?>
                         <? echo 'По запросу'; ?>
                     <? else: ?>
-                        <?= !empty($arPrice) ? $arPrice['PRINT_PRICE'] : null ?>
-                    <? endif; ?>
-                    </span>
-                </div>
+					<div class="catalog-section-item-price-discount" >
+						<?php if (!$arVisual['OFFERS']['USE'] && !empty($arItem['OFFERS'])) { ?>
+							<?= Loc::getMessage('C_CATALOG_SECTION_CATALOG_LIST_1_PRICE_FORM') ?>
+						<?php } ?>
+
+						<?= !empty($arPrice) ? $arPrice['PRINT_PRICE'] : null ?>
+					</div>
+				<? endif; ?>
                 <div class="catalog-section-item-price-base">
                     <?php if (!$arVisual['OFFERS']['USE'] && !empty($arItem['OFFERS'])) { ?>
                         <?= Loc::getMessage('C_CATALOG_SECTION_CATALOG_LIST_1_PRICE_FORM') ?>
