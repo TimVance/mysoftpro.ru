@@ -182,8 +182,12 @@ $part = Constructor::isLite() ? 'lite' : 'base';
         
         <?php if($APPLICATION->GetCurDir() == "/") include($directory.'/parts/custom/header.end.main.php') ?>
 <meta name="google-site-verification" content="wYwxY8MIDCGHzpeS0s0kZIymiRsk-6xRHWBC6fr94JU" />
+<script type="text/javascript">
+var __cs = __cs || [];
+__cs.push(["setCsAccount", "CuvhfG9fUNnKVG5PYspAtWv1obPEGioV"]);
+</script>
+<script type="text/javascript" async src="https://app.uiscom.ru/static/cs.min.js"></script>
 
-        
     </head>
     <body class="public intec-adaptive">
         <?php $APPLICATION->IncludeFile('/include/body_start_counter.php'); ?>

@@ -35,3 +35,20 @@
 .intec-ui-control-basket-button:hover .intec-ui-part-content {
     color: #fff;
 }
+
+.catalog-element-offers-list-item-img {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+.vygoda_price {
+    margin-top: 5px;
+    color: #8abc43;
+}
+
+.catalog-element-offers-list-item-text {
+    font-size: 14px;
+    color: #222;
+    margin-top: 20px
+}

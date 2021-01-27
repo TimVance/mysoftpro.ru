@@ -97,6 +97,22 @@ $arSections = [
         'NAME' => $arVisual['INFORMATION']['HELP']['NAME'],
         'VALUE' => __DIR__.'/sections/help.php'
     ],
+    /*
+    'AKCII' => [
+        'ID' => 'akcii',
+        'SHOW' => "Y",
+        'TYPE' => 'file',
+        'NAME' => "Акции",
+        'VALUE' => __DIR__.'/sections/akcii.php'
+    ],
+    'SERTIFICATE' => [
+        'ID' => 'sertificate',
+        'SHOW' => "Y",
+        'TYPE' => 'file',
+        'NAME' => "Сертификаты",
+        'VALUE' => __DIR__.'/sections/sertificate.php'
+    ],
+    */
 ];
 
 if ($arVisual['DESCRIPTION']['DETAIL']['SHOW']) {

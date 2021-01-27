@@ -114,6 +114,11 @@ if (empty($arResult['SKU']['NAME']))
                     <div class="catalog-element-offers-list-item-content">
                         <div class="intec-grid intec-grid-nowrap intec-grid-i-12 intec-grid-1024-wrap">
                             <div class="intec-grid-item-3 intec-grid-item-1024-1">
+                                <?php if (!empty($arOffer['PREVIEW_PICTURE']["SRC"])) { ?>
+                                    <div class="catalog-element-offers-list-item-img">
+                                        <img width="120" height="auto" src="<?= $arOffer['PREVIEW_PICTURE']["SRC"] ?>">
+                                    </div>
+                                <?php } ?>
                                 <?php if (!empty($arOffer['NAME'])) { ?>
                                     <div class="catalog-element-offers-list-item-name">
                                         <?= $arOffer['NAME'] ?>
@@ -129,6 +134,14 @@ if (empty($arResult['SKU']['NAME']))
                                 <?php if ($arVisual['PRICE']['RANGE'])
                                     $vPriceRange($arOffer);
                                 ?>
+                                <div class="vygoda_price">
+                                    <?= $arOffer['PREVIEW_TEXT'] ?>
+                                </div>
+                                <?php if (!empty($arOffer['DETAIL_TEXT'])) { ?>
+                                    <div class="catalog-element-offers-list-item-text">
+                                        <?= $arOffer['DETAIL_TEXT'] ?>
+                                    </div>
+                                <?php } ?>
                             </div>
                             <?php if ($arResult['ACTION'] !== 'none' || $arResult['COMPARE']['USE']) { ?>
                                 <div class="intec-grid-item-3 intec-grid-item-1024-2 intec-grid-item-650-1">
