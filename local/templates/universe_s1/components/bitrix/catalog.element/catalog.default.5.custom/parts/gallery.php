@@ -10,6 +10,14 @@ use intec\core\helpers\Html;
 
 ?>
 <?php $vGallery = function (&$arItem, $bOffer = false) use (&$arResult, &$arVisual) { ?>
+    <div class="stickers-id">
+        <? foreach ($arItem["PROPERTIES"]["STIKERS"]["VALUE_XML_ID"] as $ind => $code): ?>
+            <div class="stickers-id-item">
+                <span class="stiker-title"><?= $code ?></span>
+                <div class="stickers-id-item-inner"><?= $arItem["PROPERTIES"]["STIKERS"]["VALUE"][$ind] ?></div>
+            </div>
+        <? endforeach; ?>
+    </div>
     <?php if (empty($arItem['GALLERY']) && $bOffer) return ?>
     <?= Html::beginTag('div', [
         'class' => 'catalog-element-gallery',

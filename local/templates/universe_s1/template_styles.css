@@ -52,3 +52,67 @@
     color: #222;
     margin-top: 20px
 }
+
+.stickers-id-item {
+    background-image: url("/images/stick_bg.png");
+    background-repeat: no-repeat;
+    width: 178px;
+    height: 22px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.stickers-id-item .stiker-title {
+    width: 55px;
+    display: inherit;
+}
+
+.stickers-id-item:hover .stickers-id-item-inner {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.stickers-id-item-inner {
+    position: absolute;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    width: 178px;
+    text-align: left;
+    left: 0;
+    top: 0;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 10px;
+    z-index: 1;
+    background-color: #FDD165;
+    font-weight: normal;
+    font-size: 13px;
+    -webkit-transform: translateX(-178px);
+    -moz-transform: translateX(-178px);
+    -ms-transform: translateX(-178px);
+    -o-transform: translateX(-178px);
+    transform: translateX(-178px);
+}
+
+.catalog-element-gallery-container {
+    position: relative;
+}
+
+.stickers-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 10px;
+}

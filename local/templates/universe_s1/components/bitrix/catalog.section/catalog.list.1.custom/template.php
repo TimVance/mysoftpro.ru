@@ -117,9 +117,17 @@ include(__DIR__.'/parts/sku.php');
                     'entity' => 'items-row'
                 ]
             ]) ?>
-                <div class="catalog-section-item-wrapper">
+                <div class="catalog-section-item-wrapper" style="position: relative">
+                    <div class="stickers-id">
+                        <? foreach ($arItem["PROPERTIES"]["STIKERS"]["VALUE_XML_ID"] as $ind => $code): ?>
+                            <div class="stickers-id-item">
+                                <span class="stiker-title"><?= $code ?></span>
+                                <div class="stickers-id-item-inner"><?= $arItem["PROPERTIES"]["STIKERS"]["VALUE"][$ind] ?></div>
+                            </div>
+                        <? endforeach; ?>
+                    </div>
                     <div class="catalog-section-item-background clearfix">
-                        <div class="catalog-section-item-image">
+                        <div class="catalog-section-item-image" style="position: relative">
                             <div class="catalog-section-item-image-wrapper">
                                 <!--noindex-->
                                 <div class="catalog-section-item-image-marks">

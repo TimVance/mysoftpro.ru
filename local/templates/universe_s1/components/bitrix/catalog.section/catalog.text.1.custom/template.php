@@ -111,7 +111,15 @@ include(__DIR__.'/parts/quantity.php');
                     'entity' => 'items-row'
                 ]
             ]) ?>
-                <div class="catalog-section-item-wrapper">
+                <div class="catalog-section-item-wrapper" style="position: relative">
+                    <div class="stickers-id">
+                        <? foreach ($arItem["PROPERTIES"]["STIKERS"]["VALUE_XML_ID"] as $ind => $code): ?>
+                            <div class="stickers-id-item">
+                                <span class="stiker-title"><?= $code ?></span>
+                                <div class="stickers-id-item-inner"><?= $arItem["PROPERTIES"]["STIKERS"]["VALUE"][$ind] ?></div>
+                            </div>
+                        <? endforeach; ?>
+                    </div>
                     <div class="catalog-section-item-background">
                         <div class="intec-grid intec-grid-wrap intec-grid-a-v-center">
                             <?= Html::beginTag('div', [
