@@ -11,11 +11,11 @@ use intec\core\helpers\Html;
 ?>
 
 <div class="catalog-element-documents-item-container">
-    <div class="intec-grid intec-grid-wrap intec-grid-a-v-stretch">
-        <?php foreach ($arResult["PROPERTIES"]["CERTIFICATES"]["VALUE"] as $arCertificate) { ?>
-            <? $arrCertificate = CFile::GetPath($arCertificate); ?>
-            <? print_r($arrCertificate); ?>
+    <div class="intec-grid intec-grid-wrap intec-grid-a-v-stretch sertificates-list">
+        <?php foreach ($arResult["PROPERTIES"]["CERTIFICATE_IMG"]["VALUE"] as $arCertificate) { ?>
+            <? $arrCertificate = CFile::GetFileArray($arCertificate); ?>
             <?= Html::beginTag('div', [
+                'style' => 'margin: 10px',
                 'class' => Html::cssClassFromArray([
                     'catalog-element-documents-item' => true,
                     'intec-grid-item' => [
@@ -29,20 +29,24 @@ use intec\core\helpers\Html;
                 <?= Html::beginTag('a', [
                     'class' => 'catalog-element-documents-item-content',
                     'href' => $arrCertificate['SRC'],
-                    'target' => '_blank'
+                    'target' => '_blank',
+                    'data-src' => $arrCertificate['SRC'],
+                    'data-preview-src' => $arrCertificate['SRC'],
+                    'style' => 'background-size: contain; height: 320px; background-image: url("'.$arrCertificate['SRC'].'")'
                 ]) ?>
-                    <div class="catalog-element-documents-item-name">
-                        <?= FileHelper::getFileNameWithoutExtension($arrCertificate['ORIGINAL_NAME']) ?>
-                    </div>
-                    <div class="catalog-element-documents-item-size">
-                        <?= CFile::FormatSize($arrCertificate['FILE_SIZE']) ?>
-                    </div>
-                    <div class="catalog-element-documents-item-extension">
-                        <?= FileHelper::getFileExtension($arrCertificate['FILE_NAME']) ?>
-                    </div>
                 <?= Html::endTag('a') ?>
             <?= Html::endTag('div') ?>
         <?php } ?>
     </div>
 </div>
 <?php unset($arCertificate) ?>
+<script>
+    $(document).ready(function () {
+        $('.sertificates-list').lightGallery({
+            selector: '.catalog-element-documents-item-content',
+            exThumbImage: 'data-preview-src',
+            autoplay: false,
+            share: false
+        });
+    });
+</script>

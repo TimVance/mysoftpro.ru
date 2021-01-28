@@ -29,11 +29,12 @@
 }
 
 .intec-ui-part-content {
-    color: #8b00ff;
+    color: #8b00ff !important;
 }
 
-.intec-ui-control-basket-button:hover .intec-ui-part-content {
-    color: #fff;
+.intec-ui-control-basket-button:hover .intec-ui-part-content,
+.ns-bitrix.c-catalog-element.c-catalog-element-catalog-default-5 .catalog-element-buy-button {
+    color: #fff !important;
 }
 
 .catalog-element-offers-list-item-img {
