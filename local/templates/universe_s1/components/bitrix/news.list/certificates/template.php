@@ -52,22 +52,11 @@ if ($arParams['DESKTOP_TEMPLATE'] == 'settings') {
                 $itemData = $item['CUSTOM_DATA'];
                 ?>
                 <div class="intec-certificates_item clearfix">
-                    <?
-                    $preview = CFile::ResizeImageGet(
-                        $item['PREVIEW_PICTURE']["ID"],
-                        [
-                            "width"  => 203,
-                            "height" => 305
-                        ],
-                        BX_RESIZE_IMAGE_EXACT,
-                        false
-                    );
-                    ?>
                     <?= Html::beginTag('div', [
                         'class' => 'intec-certificates_wrap',
                         'data'  => [
                             'src'         => $itemData['DETAIL_IMAGE'],
-                            'preview-src' => $preview["src"],
+                            'preview-src' => $itemData['DETAIL_IMAGE'],
                             'role'        => $arParams['DESKTOP_TEMPLATE'] === 'tiles' ? 'item' : null
                         ]
                     ]) ?>
@@ -75,13 +64,13 @@ if ($arParams['DESKTOP_TEMPLATE'] == 'settings') {
                         'class' => 'intec-certificates_image',
                         'data'  => [
                             'src'          => $itemData['DETAIL_IMAGE'],
-                            'preview-src'  => $preview["src"],
+                            'preview-src'  => $itemData['DETAIL_IMAGE'],
                             'role'         => $arParams['DESKTOP_TEMPLATE'] === 'list' ? 'item' : null,
                             'lazyload-use' => $arVisual['LAZYLOAD']['USE'] ? 'true' : 'false',
-                            'original'     => $arVisual['LAZYLOAD']['USE'] ? $preview["src"] : null
+                            'original'     => $arVisual['LAZYLOAD']['USE'] ? $itemData['PREVIEW_IMAGE'] : null
                         ],
                         'style' => [
-                            'background-image' => !$arVisual['LAZYLOAD']['USE'] ? 'url(\'' . $preview["src"] . '\')' : null
+                            'background-image' => !$arVisual['LAZYLOAD']['USE'] ? 'url(\'' . $itemData['PREVIEW_IMAGE'] . '\')' : null
                         ]
                     ]) ?>
                     <div class="intec-certificates_name">

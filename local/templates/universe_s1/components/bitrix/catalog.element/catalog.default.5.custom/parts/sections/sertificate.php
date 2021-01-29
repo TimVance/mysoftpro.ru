@@ -40,13 +40,15 @@ use intec\core\helpers\Html;
     </div>
 </div>
 <?php unset($arCertificate) ?>
-<script>
-    $(document).ready(function () {
-        $('.sertificates-list').lightGallery({
-            selector: '.catalog-element-documents-item-content',
-            exThumbImage: 'data-preview-src',
-            autoplay: false,
-            share: false
+<?php if (!empty($arResult["PROPERTIES"]["CERTIFICATE_IMG"]["VALUE"])): ?>
+    <script>
+        $(document).ready(function () {
+            $('.sertificates-list').lightGallery({
+                selector: '.catalog-element-documents-item-content',
+                exThumbImage: 'data-preview-src',
+                autoplay: false,
+                share: false
+            });
         });
-    });
-</script>
+    </script>
+<?php endif; ?>

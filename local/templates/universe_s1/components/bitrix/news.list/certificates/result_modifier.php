@@ -42,6 +42,9 @@ if (empty($arParams['DESKTOP_TEMPLATE'])) {
     $arParams['DESKTOP_TEMPLATE'] = 'tiles_big';
 }
 
+echo '<div class="123ffd" style="display: none">';
+    print_r($arResult);
+echo '</div>';
 
 foreach ($arResult['ITEMS'] as $k => &$item) {
     $customData = array(
