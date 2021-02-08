@@ -6,6 +6,7 @@
 
 global $APPLICATION;
 
+
 $aMenuLinksExt = $APPLICATION->IncludeComponent(
 	"intec.universe:menu.sections", 
 	"", 

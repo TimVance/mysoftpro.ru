@@ -8,28 +8,14 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Каталог товаров", 
-		"/catalog/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Бренды", 
-		"/brands/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Юридическим лицам", 
+		"Для бизнеса", 
 		"/juridicheskim-licam/", 
-		Array("DISABLE_CHILD"=>"Y"), 
+		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Доставка и оплата", 
+		"Помощь", 
 		"/delivery/", 
 		Array(), 
 		Array(), 
