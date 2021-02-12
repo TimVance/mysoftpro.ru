@@ -1,7 +1,7 @@
 <?php
 
     include_once $_SERVER["DOCUMENT_ROOT"]."/bitrix/php_interface/init.php";
-    
+
     // Проверка остатков
     Bitrix\Main\EventManager::getInstance()->addEventHandler(
         'sale',
@@ -15,10 +15,9 @@
         $basket = $order->getBasket();
         $basketItems = $basket->getBasketItems();
         $ids = [];
-        foreach ($basket as $basketItem) {
+        foreach ($basketItems as $basketItem) {
             $ids[] = $basketItem->getProductId();
         }
-
 
         // Достаем остатки
         CModule::IncludeModule("catalog");
@@ -26,7 +25,7 @@
         foreach ($ids as $id) {
             $rsStore = CCatalogStoreProduct::GetList(
                 array(),
-                array('PRODUCT_ID' => $ids),
+                array('PRODUCT_ID' => $id),
                 false,
                 false,
                 array('AMOUNT', 'PRODUCT_ID')
@@ -69,7 +68,7 @@
 
                 $message = '';
                 foreach ($goods as $product) {
-                    $message .= $product["NAME"].': '.$product["CNT"].' шт. \n';
+                    $message .= $product["NAME"].': '.$product["CNT"].' шт. <br>';
                 }
 
                 $arEventFields = array(

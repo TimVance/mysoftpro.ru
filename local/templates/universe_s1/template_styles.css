@@ -134,3 +134,7 @@
 .show_all_menu_elem:hover {
     color: #f5b553;
 }
+
+.custom-basket-top {
+    display: none;
+}
