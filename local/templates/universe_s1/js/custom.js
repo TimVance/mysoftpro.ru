@@ -17,3 +17,15 @@ $(function () {
 });
 
 
+$(function () {
+    let cnt_show_elements = 11;
+    let els = $(".catalog-content-left .catalog-menu .menu-wrapper .menu-item:hidden");
+    if (els.length) {
+        $(".catalog-content-left .catalog-menu .menu-wrapper").append('<span class="show_all_menu_elem">Посмотреть все</span>');
+    }
+
+    $(".show_all_menu_elem").click(function () {
+        $(this).remove();
+        els.slideDown();
+    });
+});

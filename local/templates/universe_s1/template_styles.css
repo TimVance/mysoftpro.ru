@@ -117,3 +117,20 @@
     z-index: 2;
     margin-top: 10px;
 }
+
+.catalog-content-left .catalog-menu .menu-wrapper .menu-item:nth-child(n + 11) {
+    display: none;
+}
+
+.show_all_menu_elem {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.show_all_menu_elem:hover {
+    color: #f5b553;
+}
