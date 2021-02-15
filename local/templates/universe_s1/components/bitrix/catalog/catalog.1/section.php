@@ -245,6 +245,7 @@ if ($arTags['SHOW'] && !$bSeo) {
 
 <?
 // https://trello.com/c/dh4s1dPR/104-наличие-под-заказ-8
+                    /*
 $arElements['PARAMETERS']['USE_FILTER'] = 'Y';
 
 $arrFilter = [
@@ -254,7 +255,8 @@ $arrFilter = [
 	
 ];
 $GLOBALS[$arElements['PARAMETERS']['FILTER_NAME']][] = $arrFilter;
-?>
+*/
+                    ?>
 
                     <?php $APPLICATION->IncludeComponent(
                         'bitrix:catalog.section',
