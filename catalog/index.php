@@ -6,14 +6,14 @@ $APPLICATION->SetTitle("Каталог лицензионного софта");
 
 // Редиректы
 
-/*
+
 if (strpos($_SERVER["REQUEST_URI"], '/programmnoe-obespechenie/') !== false) {
     $url = str_replace('/programmnoe-obespechenie', '', $_SERVER["REQUEST_URI"]);
     header("HTTP/1.1 301 Moved Permanently");
     header("Location: ".$url);
     exit();
 }
-*/
+
 
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog",
