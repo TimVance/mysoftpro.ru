@@ -1,4 +1,5 @@
 <?php if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die(); ?>
+
 <?php
 
 use Bitrix\Main\Loader;
@@ -163,6 +164,7 @@ $part = Constructor::isLite() ? 'lite' : 'base';
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#ffc40d">
 		<meta name="theme-color" content="#ffffff">
+
 
         <script type="text/javascript">
             (function () {
