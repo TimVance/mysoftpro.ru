@@ -62,9 +62,12 @@ if ($arParams['USE_FILTER'] === 'Y') {
     $arFilter['SHOW'] = true;
 }
 
+
+
 $arSearch['PARAMETERS']['FILTER'] = $arFilter;
 $arSearch['PARAMETERS']['ELEMENTS'] = $arElements;
 $arSearch['PARAMETERS']['SECTIONS'] = $arSearchSections;
+
 
 ?>
 <div class="ns-bitrix c-catalog c-catalog-catalog-1 p-search">

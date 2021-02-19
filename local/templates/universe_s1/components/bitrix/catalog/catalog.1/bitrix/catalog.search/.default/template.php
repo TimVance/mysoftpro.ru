@@ -76,7 +76,7 @@ $arFilter = $arParams['FILTER'];
     <?php $this->SetViewTarget('component_search');?>
         <?php $arElements['ID'] = $APPLICATION->IncludeComponent(
             'bitrix:search.page',
-            'catalog',
+            '',
             [
                 'RESTART' => $arParams['RESTART'],
                 'NO_WORD_LOGIC' => $arParams['NO_WORD_LOGIC'],
